@@ -1,0 +1,154 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 3px solid white;
+  border-radius: 5px;
+  z-index: 501 !important;
+  background-color: #B1D4E0;
+  width: 500px;
+  max-width: 60%;
+    max-height: 80%;
+    display: block;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+    box-shadow: 3px 3px 5px black !important;
+    overflow-y: scroll !important;
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid white;
+    z-index: 5012!important;
+    color:#0C2D48;
+    
+    
+}
+
+@media(max-width:480px){
+    .modal{
+        max-width: 95%;
+        max-height: 60%;
+    }
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+    
+    
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+    z-index: 502     !important;
+    text-align: justify-all !important;
+        
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0,0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+    z-index: 401!important;
+}
+
+#modButton{
+   
+    display: block !important;
+    outline: none !important;
+    background-color: #DB1F48 !important;
+    border: 2px solid white !important;
+    outline:none !important;
+    
+    
+} 
+
+#modButtonSoc{
+   
+    display: block !important;
+    outline: none !important;
+    background-color: #DB1F48 !important;
+    border: 2px solid white !important;
+    outline: none !important;
+    
+    
+} 
+
+.modButSocYou{
+   
+    display: block !important;
+    outline: none !important;
+    background-color: #DB1F48 !important;
+    border: 2px solid white !important;
+    outline: none !important;
+    
+    
+} 
+
+#modLink{
+    text-decoration: none !important;
+    outline:none !important;
+}
+
+#modLinkSoc{
+    text-decoration: none !important;
+    outline:none !important;
+}
+
+.modBtnPlacement{
+     position: absolute;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin-top:30px !important;
+    margin-bottom:10px !important
+}
+
+.modBtnYou{
+     position: absolute;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin-top:100px !important;
+    margin-bottom:10px !important
+}
+
+.shadow{
+    box-shadow: 1px 1px 5px black !important;
+}
+
+.navbar-collapse{
+    background-color: #3f586b !important;
+    
+    
+}
+
+.navbar-collapse .nav-item{
+    padding-left: 20px !important;
+}

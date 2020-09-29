@@ -1,0 +1,137 @@
+<% include ../partials/header %>
+
+
+<style>
+	@media only screen and (max-width:700px){
+		
+		#mm{
+		    width:400px;
+			margin-right:900px;
+			font-size:10.5px;
+			font-height:10px;
+			linespace:10px;
+		}
+	}
+
+	
+	
+
+
+</style>
+ <br>
+<br>
+<br>
+<div class="container text-center">
+	<h1 style="color:#490BA1">
+	<b>Question Paper Contest</b>
+	</h1>
+	<h4 style="color:#D81C44">
+		SIGN UP TO PARTICIPATE.
+	</h4>
+	<h3>
+		Get Chance to Win Cash Reward of Rs 447 (instantly on Gpay)
+	</h3>
+	<h4>
+		Dont Miss the Oppurtunity<br>
+		<b>Exclusively for VitConnex QuestionPaper Group</b>
+	</h4>
+</div>
+
+
+<p class="text-center" style="font-size:40px;color:#F60D29" id="demo">
+	
+</p>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 28, 2020 14:34:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
+<% var sr = 0 %>
+<h3 class="text-center" style="color:red;text-decoration:underline;">
+	Top 10 Ranks Right Now
+	
+</h3>
+<h4 class="text-center">
+	Upload paper to get in top three
+	<h3 class="text-center">
+		<b>Leader Board gets updated Every Second</b>
+	</h3>
+</h4>
+	<div id="mm" class="bs-example container">
+    <table class="table" class="container">
+		
+        <thead class="thead-dark">
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+          
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+			<% member.forEach(function(contestant){  %>
+		<% sr =  sr + 1 %>
+            <tr>
+                <td><%= sr %></td>
+                <td><%= contestant.name %></td>
+             
+                <td><%= contestant.username %></td>
+            </tr>
+       
+                  
+        </tbody>
+		<% }); %>
+    </table>
+</div>
+	<div class="container ">
+	<p style="font-size:20px;">
+		<h5>
+		Hey guys! Here's a chance to put some dough in your pocket. Starting today. Upload question papers and get crack the leaderBoard. Top three on the leaderBoard, each will get Rs 149.
+		</h5>
+		<b style="color:red">Guide Lines</b><br>
+		1. Every second<b>(rank changes)</b>. Be the one to be on the Top<br>
+		2.Top three members get Cash reward of <b>Rs 149. </b>In Case there is only one participant <b>Rs 447 </b>will be awarded to that person.<br>
+		3.Each paper gives 1 point.(only pdf format(camscanner)/whatsapp shared images are allowed)<br> First contestant who upload question will get additional<b> 3 bonus points.</b>.<br>
+		4.Participants can view their status on leaderBoard any time.<br>
+		5.Participants should check previous papers before uploading for redundancy<br>
+		6.Uploading duplicate or repeated papers gives <b>negative of 2 marks</b> <br>
+		7.Contest among only one whatsapp group Vitconnex QuestionPaper Group.<br>
+		8.Contest is 100% transparent.<br>
+		9.Mobile number of top members will be asked soon.<br>
+		10.<b>Disqualified</b> if uploaded papers already contains a watermark.
+		11.Top three members will be <b>verified</b> whether they followed all the guidelines
+		12.Participants can upload image or pdf (Better quality with pdf) <a href="https://www.vitconnex.com/adPost/resources" style="color:blue">UploadNow</a><br>
+	</p>
+</div>
+	
+
+
+
+<% include ../partials/footer %>

@@ -1,0 +1,32 @@
+.colli{
+    text-align: center;
+    margin-bottom: 20px
+}
+
+.myRows{
+    margin-top: 50px
+}
+
+.agliBaarImg{
+    background-image: url(image/Agli%20Barr%20ThumbnailArtboard%201.png);
+    width:480px;
+    height:280px;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+
+.suggestionForm h1{
+    text-align: center;
+}
+
+.YTcollabInfo h1{
+    text-align: center;
+}
+
+@media(max-width:1200px){
+iframe{
+    width:280px !important;
+    height:180px !important;
+}
+}
